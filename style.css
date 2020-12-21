@@ -22,40 +22,39 @@ body {
     align-items: center;
     justify-content: start;
     width: 60%;
-    height: 100vh;
+    height: 785px;
 }
 
 .instagram-phone {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-basis: 454px;
     width: 50%;
-}
-
-.instagram-phone img {
-    height: 50rem;
+    height: 618px;
 }
 
 .instagram-continue {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: column;
-    width: 50%;
-    min-height: 34rem;
+    -webkit-box-flex: 1;
+    -webkit-box-pack: center;
+    justify-content: center;
+    flex-grow: 1;
+    margin-top: 12px;
+    max-width: 350px;
 }
-
-
 
 .group {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     flex-direction: column;
     background-color: #fff;
     width: 100%;
     padding: 1.3rem 0;
-    border: 1px solid lightgray;
+    border: 1px solid #dbdbdb;
+    border-radius: 1px;
+    margin: 0 0 10px;
+    padding: 10px 0;
 }
 
 .group:nth-child(1) {
@@ -88,10 +87,24 @@ body {
 .instagram-logout {
     color: #0095f6;
     margin-top: 1rem;
+    font-weight: bold;
 }
 
 .not-account {
     color: #262626;
+    margin: 15px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.links {
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.or {
+    font-weight: normal;
 }
 
 .link-blue {
@@ -99,20 +112,36 @@ body {
 }
 
 .login-footer {
+    -webkit-box-align: stretch;
+    align-items: stretch;
+    box-sizing: border-box;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
     flex-direction: column;
-    align-items: center;
+    position: relative;
     justify-content: center;
-    width: 100%;
-    padding: 1.3rem 0;
+    padding: 0;
+    margin: 0;
+}
+
+.get-app {
+    color: #262626;
+    font-size: 14px;
+    line-height: 18px;
+    margin: 10px 20px 10px 20px;
+    text-align: center;
+    font-weight: bold;
 }
 
 .download {
+    -webkit-box-align: stretch;
+    box-sizing: border-box;
     display: flex;
     width: 100%;
     justify-content: space-evenly;
-    align-items: center;
-    padding: 1rem;
+    align-items: stretch;
+    position: relative;
 }
 
 .app-download {
@@ -123,10 +152,12 @@ body {
 
 .app-download:nth-child(1) {
     background-image: url('./img/apple-button.png');
+    margin: 10px 0 10px 0;
 }
 
 .app-download:nth-child(2) {
     background-image: url('./img/google-button.png');
+    margin: 10px 0 10px 0;
 }
 
 /* media queries */
